@@ -1,0 +1,137 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Dataset Analysis Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; background-color: #f8f9fa; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+            h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
+            h2 { color: #34495e; margin-top: 30px; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+            th { background-color: #e74c3c; color: white; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            .info-box { background-color: #fff3cd; padding: 15px; border-radius: 5px; margin: 15px 0; }
+            .stat-box { display: inline-block; background-color: #e8f4fd; padding: 15px; margin: 10px; border-radius: 5px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Energy Consumption Dataset Analysis</h1>
+
+            <div class="info-box">
+                <h2>Dataset Overview</h2>
+                <p><strong>Dataset Shape:</strong> 3650 rows × 28 columns</p>
+                <p><strong>Missing Values:</strong> 9</p>
+            </div>
+
+            <h2>Statistical Summary</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Mean</th>
+                    <th>Std Dev</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>Median</th>
+                </tr>
+    
+                    <tr>
+                        <td><strong>Energy_Consumption</strong></td>
+                        <td>1013.83</td>
+                        <td>148.38</td>
+                        <td>483.72</td>
+                        <td>1731.28</td>
+                        <td>1005.84</td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Temperature_C</strong></td>
+                        <td>11.18</td>
+                        <td>4.07</td>
+                        <td>0.00</td>
+                        <td>26.30</td>
+                        <td>11.00</td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Humidity</strong></td>
+                        <td>65.30</td>
+                        <td>14.51</td>
+                        <td>30.00</td>
+                        <td>95.00</td>
+                        <td>65.33</td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Wind_Speed</strong></td>
+                        <td>1.95</td>
+                        <td>1.95</td>
+                        <td>0.00</td>
+                        <td>15.00</td>
+                        <td>1.33</td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Solar_Radiation</strong></td>
+                        <td>199.42</td>
+                        <td>140.09</td>
+                        <td>2.22</td>
+                        <td>800.00</td>
+                        <td>166.38</td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Pressure</strong></td>
+                        <td>1013.01</td>
+                        <td>9.56</td>
+                        <td>990.00</td>
+                        <td>1030.00</td>
+                        <td>1013.44</td>
+                    </tr>
+            
+            </table>
+
+            <h2>Seasonal Analysis</h2>
+            <table>
+                <tr>
+                    <th>Season</th>
+                    <th>Mean Consumption (kWh)</th>
+                    <th>Std Dev</th>
+                    <th>Sample Count</th>
+                </tr>
+    
+                <tr>
+                    <td>Autumn</td>
+                    <td>1005.70</td>
+                    <td>139.96</td>
+                    <td>910</td>
+                </tr>
+        
+                <tr>
+                    <td>Spring</td>
+                    <td>988.90</td>
+                    <td>131.78</td>
+                    <td>920</td>
+                </tr>
+        
+                <tr>
+                    <td>Summer</td>
+                    <td>1099.70</td>
+                    <td>163.74</td>
+                    <td>920</td>
+                </tr>
+        
+                <tr>
+                    <td>Winter</td>
+                    <td>959.74</td>
+                    <td>114.97</td>
+                    <td>900</td>
+                </tr>
+        
+            </table>
+        </div>
+    </body>
+    </html>
+    

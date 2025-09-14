@@ -1,0 +1,22 @@
+SEASONAL CONSUMPTION INSIGHTS
+==============================
+
+Autumn:
+  Mean: 1005.70 kWh
+  Std: 139.96 kWh
+  Count: 910 days
+
+Spring:
+  Mean: 988.90 kWh
+  Std: 131.78 kWh
+  Count: 920 days
+
+Summer:
+  Mean: 1099.70 kWh
+  Std: 163.74 kWh
+  Count: 920 days
+
+Winter:
+  Mean: 959.74 kWh
+  Std: 114.97 kWh
+  Count: 900 days

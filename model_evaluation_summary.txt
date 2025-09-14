@@ -1,0 +1,79 @@
+MODEL EVALUATION SUMMARY
+=========================
+
+LinearRegression:
+  MSE: 2879.48
+  RMSE: 53.66
+  MAE: 42.45
+  R²: 0.8683
+  MAPE: 0.0422
+
+Ridge:
+  MSE: 2878.19
+  RMSE: 53.65
+  MAE: 42.44
+  R²: 0.8684
+  MAPE: 0.0422
+
+Lasso:
+  MSE: 2867.64
+  RMSE: 53.55
+  MAE: 42.38
+  R²: 0.8688
+  MAPE: 0.0422
+
+ElasticNet:
+  MSE: 2871.15
+  RMSE: 53.58
+  MAE: 42.40
+  R²: 0.8687
+  MAPE: 0.0422
+
+DecisionTree:
+  MSE: 4843.73
+  RMSE: 69.60
+  MAE: 55.95
+  R²: 0.7785
+  MAPE: 0.0558
+
+RandomForest:
+  MSE: 3206.65
+  RMSE: 56.63
+  MAE: 44.30
+  R²: 0.8533
+  MAPE: 0.0444
+
+GradientBoosting:
+  MSE: 2753.07
+  RMSE: 52.47
+  MAE: 41.26
+  R²: 0.8741
+  MAPE: 0.0411
+
+AdaBoost:
+  MSE: 3836.27
+  RMSE: 61.94
+  MAE: 47.30
+  R²: 0.8245
+  MAPE: 0.0474
+
+SVR:
+  MSE: 2971.98
+  RMSE: 54.52
+  MAE: 42.69
+  R²: 0.8641
+  MAPE: 0.0425
+
+KNN:
+  MSE: 7148.44
+  RMSE: 84.55
+  MAE: 65.61
+  R²: 0.6731
+  MAPE: 0.0661
+
+MLPRegressor:
+  MSE: 16008.76
+  RMSE: 126.53
+  MAE: 93.58
+  R²: 0.2678
+  MAPE: 0.0932

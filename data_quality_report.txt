@@ -1,0 +1,7 @@
+DATA QUALITY REPORT
+====================
+Dataset Shape: (3650, 28)
+Date Range: 1981-01-01 00:00:00 to 1990-12-31 00:00:00
+Missing Values: 9
+Duplicate Rows: 0
+Energy Consumption Range: 483.72 - 1731.28 kWh

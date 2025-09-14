@@ -1,0 +1,51 @@
+HYPERPARAMETER OPTIMIZATION RESULTS
+===================================
+
+LinearRegression:
+  No hyperparameters optimized
+
+Ridge:
+  alpha: 0.01
+
+Lasso:
+  alpha: 0.1
+
+ElasticNet:
+  l1_ratio: 0.9
+  alpha: 0.001
+
+DecisionTree:
+  min_samples_split: 5
+  min_samples_leaf: 8
+  max_depth: 7
+
+RandomForest:
+  n_estimators: 200
+  min_samples_split: 5
+  min_samples_leaf: 2
+  max_depth: None
+
+GradientBoosting:
+  subsample: 0.8
+  n_estimators: 100
+  max_depth: 3
+  learning_rate: 0.1
+
+AdaBoost:
+  n_estimators: 200
+  learning_rate: 1.0
+
+SVR:
+  kernel: rbf
+  gamma: 0.01
+  C: 100
+
+KNN:
+  weights: distance
+  n_neighbors: 7
+  metric: euclidean
+
+MLPRegressor:
+  hidden_layer_sizes: (100,)
+  alpha: 0.001
+  activation: relu

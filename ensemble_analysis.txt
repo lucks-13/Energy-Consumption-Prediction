@@ -1,0 +1,14 @@
+ENSEMBLE METHODS ANALYSIS
+=========================
+
+VotingRegressor:
+  MSE: 2715.90
+  R²: 0.8758
+
+StackingRegressor:
+  MSE: 2581.92
+  R²: 0.8819
+
+WeightedEnsemble:
+  MSE: 2820.80
+  R²: 0.8710

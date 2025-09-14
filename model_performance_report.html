@@ -1,0 +1,250 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Energy Consumption Model Performance Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; background-color: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+            h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+            h2 { color: #34495e; margin-top: 30px; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+            th { background-color: #3498db; color: white; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            .metric { background-color: #ecf0f1; padding: 15px; margin: 10px; border-radius: 5px; }
+            .best { background-color: #d5f4e6; }
+            .summary { background-color: #e8f4fd; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Energy Consumption Prediction Model Performance Report</h1>
+
+            <div class="summary">
+                <h2>Executive Summary</h2>
+                <p><strong>Best Model:</strong> GradientBoosting</p>
+                <p><strong>R² Score:</strong> 0.8741</p>
+                <p><strong>RMSE:</strong> 52.47 kWh</p>
+                <p><strong>MAE:</strong> 41.26 kWh</p>
+            </div>
+
+            <h2>Model Comparison</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>R² Score</th>
+                    <th>RMSE</th>
+                    <th>MAE</th>
+                    <th>MAPE</th>
+                </tr>
+    
+                <tr class="best">
+                    <td><strong>GradientBoosting</strong></td>
+                    <td>0.8741</td>
+                    <td>52.47</td>
+                    <td>41.26</td>
+                    <td>0.0411</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>Lasso</strong></td>
+                    <td>0.8688</td>
+                    <td>53.55</td>
+                    <td>42.38</td>
+                    <td>0.0422</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>ElasticNet</strong></td>
+                    <td>0.8687</td>
+                    <td>53.58</td>
+                    <td>42.40</td>
+                    <td>0.0422</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>Ridge</strong></td>
+                    <td>0.8684</td>
+                    <td>53.65</td>
+                    <td>42.44</td>
+                    <td>0.0422</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>LinearRegression</strong></td>
+                    <td>0.8683</td>
+                    <td>53.66</td>
+                    <td>42.45</td>
+                    <td>0.0422</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>SVR</strong></td>
+                    <td>0.8641</td>
+                    <td>54.52</td>
+                    <td>42.69</td>
+                    <td>0.0425</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>RandomForest</strong></td>
+                    <td>0.8533</td>
+                    <td>56.63</td>
+                    <td>44.30</td>
+                    <td>0.0444</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>AdaBoost</strong></td>
+                    <td>0.8245</td>
+                    <td>61.94</td>
+                    <td>47.30</td>
+                    <td>0.0474</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>DecisionTree</strong></td>
+                    <td>0.7785</td>
+                    <td>69.60</td>
+                    <td>55.95</td>
+                    <td>0.0558</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>KNN</strong></td>
+                    <td>0.6731</td>
+                    <td>84.55</td>
+                    <td>65.61</td>
+                    <td>0.0661</td>
+                </tr>
+        
+                <tr class="">
+                    <td><strong>MLPRegressor</strong></td>
+                    <td>0.2678</td>
+                    <td>126.53</td>
+                    <td>93.58</td>
+                    <td>0.0932</td>
+                </tr>
+        
+            </table>
+
+            <h2>Feature Importance Analysis</h2>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Feature</th>
+                    <th>Importance Score</th>
+                    <th>Standard Deviation</th>
+                </tr>
+    
+                <tr>
+                    <td>1</td>
+                    <td>Temperature_C</td>
+                    <td>32743.8222</td>
+                    <td>51341.4687</td>
+                </tr>
+        
+                <tr>
+                    <td>2</td>
+                    <td>Temperature_Squared</td>
+                    <td>16836.6038</td>
+                    <td>26014.8163</td>
+                </tr>
+        
+                <tr>
+                    <td>3</td>
+                    <td>Humidity</td>
+                    <td>3341.7781</td>
+                    <td>4637.3673</td>
+                </tr>
+        
+                <tr>
+                    <td>4</td>
+                    <td>Solar_Radiation</td>
+                    <td>3339.1269</td>
+                    <td>3925.2644</td>
+                </tr>
+        
+                <tr>
+                    <td>5</td>
+                    <td>Humidity_Squared</td>
+                    <td>420.1590</td>
+                    <td>1027.4179</td>
+                </tr>
+        
+                <tr>
+                    <td>6</td>
+                    <td>Pressure_Temp_Interaction</td>
+                    <td>372.6315</td>
+                    <td>905.2460</td>
+                </tr>
+        
+                <tr>
+                    <td>7</td>
+                    <td>Pressure</td>
+                    <td>257.3051</td>
+                    <td>297.3822</td>
+                </tr>
+        
+                <tr>
+                    <td>8</td>
+                    <td>Energy_MA_7</td>
+                    <td>234.1400</td>
+                    <td>293.4869</td>
+                </tr>
+        
+                <tr>
+                    <td>9</td>
+                    <td>Temp_MA_7</td>
+                    <td>131.9115</td>
+                    <td>203.3297</td>
+                </tr>
+        
+                <tr>
+                    <td>10</td>
+                    <td>Wind_Speed</td>
+                    <td>119.1772</td>
+                    <td>181.7895</td>
+                </tr>
+        
+                <tr>
+                    <td>11</td>
+                    <td>Wind_Solar_Interaction</td>
+                    <td>88.1798</td>
+                    <td>211.2407</td>
+                </tr>
+        
+                <tr>
+                    <td>12</td>
+                    <td>Day_of_Year</td>
+                    <td>82.0996</td>
+                    <td>196.1471</td>
+                </tr>
+        
+                <tr>
+                    <td>13</td>
+                    <td>Month</td>
+                    <td>60.2424</td>
+                    <td>148.7343</td>
+                </tr>
+        
+                <tr>
+                    <td>14</td>
+                    <td>TempCat_Cool</td>
+                    <td>48.9785</td>
+                    <td>101.2082</td>
+                </tr>
+        
+                <tr>
+                    <td>15</td>
+                    <td>TempCat_Cold</td>
+                    <td>33.2034</td>
+                    <td>64.1188</td>
+                </tr>
+        
+            </table>
+        </div>
+    </body>
+    </html>
+    

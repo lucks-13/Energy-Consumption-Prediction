@@ -1,0 +1,34 @@
+
+# Energy Consumption Prediction Model Documentation
+
+## Model Information
+- **Model Type**: GradientBoosting
+- **Scaler**: StandardScaler
+
+## Performance Metrics
+- **R² Score**: 0.8741
+- **RMSE**: 52.47 kWh
+- **MAE**: 41.26 kWh
+- **MAPE**: 0.0411
+
+## Top 5 Most Important Features
+1. Temperature_C: 32743.8222
+2. Temperature_Squared: 16836.6038
+3. Humidity: 3341.7781
+4. Solar_Radiation: 3339.1269
+5. Humidity_Squared: 420.1590
+
+## Prediction Intervals
+- 95% Confidence Interval: Available
+- 80% Confidence Interval: Available
+- Bootstrap samples: 100
+
+## Model Limitations
+- Performance may degrade with significant weather pattern changes
+- Requires regular retraining for optimal performance
+
+## Usage Instructions
+1. Load model: `joblib.load('energy_consumption_model.pkl')`
+2. Prepare data with required features: 33 features
+3. Use predict_energy_consumption() function for predictions
+4. Monitor for feature drift and model performance degradation

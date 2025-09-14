@@ -1,0 +1,6 @@
+Original_Features,Feature_Count,Engineered_Features
+Temperature_C,1,"Temp_MA_7, Temp_MA_30, Temperature_Squared, Temp_Lag_1, Temp_Lag_7"
+Humidity,1,"Humidity_Squared, Temp_Humidity_Interaction"
+Wind_Speed,1,"Wind_Speed_Sqrt, Wind_Solar_Interaction"
+Solar_Radiation,1,Wind_Solar_Interaction
+Pressure,1,Pressure_Temp_Interaction

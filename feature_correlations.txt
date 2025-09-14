@@ -1,0 +1,17 @@
+FEATURE-TARGET CORRELATIONS
+==============================
+ 1. Energy_MA_7              : 0.5262 (p=1.3069e-258)
+ 2. Temperature_C            : -0.5017 (p=1.3410e-231)
+ 3. Pressure_Temp_Interaction: -0.4984 (p=4.6508e-228)
+ 4. Humidity                 : 0.4914 (p=8.4393e-221)
+ 5. Humidity_Squared         : 0.4877 (p=5.1419e-217)
+ 6. TempCat_Cold             : 0.4646 (p=1.7804e-194)
+ 7. Solar_Radiation          : -0.4558 (p=2.1580e-186)
+ 8. Temperature_Squared      : -0.4055 (p=3.1053e-144)
+ 9. Temp_MA_7                : -0.3923 (p=2.6649e-134)
+10. Temp_Lag_1               : -0.3875 (p=7.3195e-131)
+11. Temp_MA_30               : -0.3575 (p=2.6594e-110)
+12. Season_Summer            : 0.3363 (p=5.1059e-97)
+13. Wind_Solar_Interaction   : -0.3267 (p=2.4538e-91)
+14. Temp_Category_Encoded    : -0.2893 (p=3.5921e-71)
+15. Temp_Lag_7               : -0.2751 (p=2.9331e-64)

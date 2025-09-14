@@ -1,0 +1,7 @@
+Metric,Value
+Training_Size,2914
+Test_Size,729
+Feature_Count,33
+Best_Model,GradientBoosting
+Best_R2,0.8740870605165634
+Best_RMSE,52.469705468789606

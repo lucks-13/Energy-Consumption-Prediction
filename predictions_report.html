@@ -1,0 +1,176 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Energy Consumption Predictions</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; background-color: #f0f2f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+            h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #27ae60; padding-bottom: 10px; }
+            h2 { color: #34495e; margin-top: 30px; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+            th { background-color: #27ae60; color: white; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            .alert { background-color: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; margin: 15px 0; }
+            .success { background-color: #d1ecf1; color: #0c5460; padding: 15px; border-radius: 5px; margin: 15px 0; }
+            .prediction-stats { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+            .stat-card { background-color: #e8f4fd; padding: 20px; border-radius: 8px; flex: 1; min-width: 200px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>30-Day Energy Consumption Forecast</h1>
+
+            <div class="prediction-stats">
+                <div class="stat-card">
+                    <h3>Mean Prediction</h3>
+                    <p><strong>1020.67 kWh</strong></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Prediction Range</h3>
+                    <p><strong>615.96 kWh</strong></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Standard Deviation</h3>
+                    <p><strong>157.05 kWh</strong></p>
+                </div>
+            </div>
+
+            <h2>Monitoring Alerts</h2>
+    <div class="alert">HIGH CONSUMPTION ALERT: 5 days with consumption > 1200.16 kWh</div><div class="alert">TEMPERATURE EXTREME ALERT: 4 days with extreme temperatures</div>
+            <h2>Daily Predictions</h2>
+            <table>
+                <tr>
+                    <th>Temperature (°C)</th>
+                    <th>Humidity (%)</th>
+                    <th>Predicted Consumption (kWh)</th>
+                    <th>95% CI Lower</th>
+                    <th>95% CI Upper</th>
+                </tr>
+    
+                <tr>
+                    <td>6.8</td>
+                    <td>61.6</td>
+                    <td>957.83</td>
+                    <td>866.07</td>
+                    <td>1065.67</td>
+                </tr>
+        
+                <tr>
+                    <td>15.2</td>
+                    <td>30.0</td>
+                    <td>784.00</td>
+                    <td>715.00</td>
+                    <td>880.39</td>
+                </tr>
+        
+                <tr>
+                    <td>12.3</td>
+                    <td>39.6</td>
+                    <td>891.77</td>
+                    <td>798.99</td>
+                    <td>984.72</td>
+                </tr>
+        
+                <tr>
+                    <td>5.0</td>
+                    <td>55.1</td>
+                    <td>1244.09</td>
+                    <td>1168.01</td>
+                    <td>1389.26</td>
+                </tr>
+        
+                <tr>
+                    <td>8.8</td>
+                    <td>78.8</td>
+                    <td>1089.91</td>
+                    <td>1002.39</td>
+                    <td>1176.26</td>
+                </tr>
+        
+                <tr>
+                    <td>17.9</td>
+                    <td>62.8</td>
+                    <td>1032.22</td>
+                    <td>915.19</td>
+                    <td>1127.43</td>
+                </tr>
+        
+                <tr>
+                    <td>1.3</td>
+                    <td>65.3</td>
+                    <td>1249.90</td>
+                    <td>1168.52</td>
+                    <td>1370.13</td>
+                </tr>
+        
+                <tr>
+                    <td>9.4</td>
+                    <td>75.3</td>
+                    <td>959.49</td>
+                    <td>870.40</td>
+                    <td>1096.37</td>
+                </tr>
+        
+                <tr>
+                    <td>16.3</td>
+                    <td>52.5</td>
+                    <td>798.80</td>
+                    <td>700.35</td>
+                    <td>924.24</td>
+                </tr>
+        
+                <tr>
+                    <td>7.6</td>
+                    <td>69.4</td>
+                    <td>1179.72</td>
+                    <td>1104.94</td>
+                    <td>1293.13</td>
+                </tr>
+        
+                <tr>
+                    <td>8.4</td>
+                    <td>53.6</td>
+                    <td>991.54</td>
+                    <td>907.47</td>
+                    <td>1126.87</td>
+                </tr>
+        
+                <tr>
+                    <td>10.8</td>
+                    <td>40.2</td>
+                    <td>759.91</td>
+                    <td>673.21</td>
+                    <td>871.15</td>
+                </tr>
+        
+                <tr>
+                    <td>17.3</td>
+                    <td>59.6</td>
+                    <td>991.55</td>
+                    <td>906.77</td>
+                    <td>1079.21</td>
+                </tr>
+        
+                <tr>
+                    <td>8.6</td>
+                    <td>73.6</td>
+                    <td>974.67</td>
+                    <td>893.82</td>
+                    <td>1048.17</td>
+                </tr>
+        
+                <tr>
+                    <td>9.4</td>
+                    <td>70.2</td>
+                    <td>1098.91</td>
+                    <td>1015.66</td>
+                    <td>1206.13</td>
+                </tr>
+        
+            </table>
+        </div>
+    </body>
+    </html>
+    

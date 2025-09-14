@@ -1,0 +1,21 @@
+ENERGY CONSUMPTION PREDICTION MODEL REPORT
+==================================================
+
+Best Model: GradientBoosting
+R² Score: 0.8741
+RMSE: 52.47 kWh
+MAE: 41.26 kWh
+MAPE: 0.0411
+
+TOP 10 IMPORTANT FEATURES:
+------------------------------
+ 1. Temperature_C            : 32743.8222
+ 2. Temperature_Squared      : 16836.6038
+ 3. Humidity                 : 3341.7781
+ 4. Solar_Radiation          : 3339.1269
+ 5. Humidity_Squared         : 420.1590
+ 6. Pressure_Temp_Interaction: 372.6315
+ 7. Pressure                 : 257.3051
+ 8. Energy_MA_7              : 234.1400
+ 9. Temp_MA_7                : 131.9115
+10. Wind_Speed               : 119.1772

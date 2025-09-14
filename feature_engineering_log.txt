@@ -1,0 +1,9 @@
+FEATURE ENGINEERING LOG
+=========================
+Original Features: 5
+Total Features After Engineering: 33
+Time-based Features: Month, Day_of_Year, Quarter, Week_of_Year, Day_of_Week, Is_Weekend
+Interaction Features: Temp_Humidity, Wind_Solar, Pressure_Temp
+Polynomial Features: Temperature_Squared, Humidity_Squared
+Lag Features: Temp_Lag_1, Temp_Lag_7, Energy_Lag_1
+Moving Average Features: Temp_MA_7, Temp_MA_30, Energy_MA_7

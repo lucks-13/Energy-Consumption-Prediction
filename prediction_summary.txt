@@ -1,0 +1,6 @@
+FUTURE PREDICTIONS SUMMARY
+=========================
+Prediction Period: 30 days
+Mean Prediction: 1020.67 kWh
+Prediction Range: 708.30 - 1324.26 kWh
+High Consumption Days (>90th percentile): 3
